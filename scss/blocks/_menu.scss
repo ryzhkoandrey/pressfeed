@@ -1,6 +1,10 @@
 .menu {
 
-    &__list {}
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 
     &__item {
 
@@ -8,11 +12,20 @@
     }
 
     &__link {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        color: #262626;
 
-        &--accent {}
+        &--accent {
+            color: #d1852c;
+        }
     }
 
-    &__dropdown {}
+    &__dropdown {
+        display: none;
+    }
 
     &__dropdown-item {}
 

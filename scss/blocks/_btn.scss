@@ -1,4 +1,12 @@
 .btn {
-
-    &--small {}
+    border-radius: 3px;
+    padding: 14px 56px;
+    min-width: 310px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    background: #4054f9;
 }
