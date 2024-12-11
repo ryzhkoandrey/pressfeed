@@ -25,6 +25,7 @@
 
     &__gift {
         position: relative;
+        margin-right: 12px;
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
         font-size: 9px;
@@ -35,8 +36,20 @@
 
     &__gift-count {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -5px;
+        right: -11px;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        min-width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 9px;
+        color: #fff;
+        background: #725ed8;
     }
 
     &__registration {
