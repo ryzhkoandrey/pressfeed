@@ -1,5 +1,12 @@
 .container {
+    --container-width: 1170px;
+    --container-padding: 55px;
+
+    @include mobile {
+        --container-padding: 15px;
+    }
+
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: calc(1200px + 30px);
+    padding: 0 var(--container-padding);
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
 }
