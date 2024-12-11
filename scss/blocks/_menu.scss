@@ -1,0 +1,21 @@
+.menu {
+
+    &__list {}
+
+    &__item {
+
+        &--has-dropdown {}
+    }
+
+    &__link {
+
+        &--accent {}
+    }
+
+    &__dropdown {}
+
+    &__dropdown-item {}
+
+    &__dropdown-link {}
+
+}
