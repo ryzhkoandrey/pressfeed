@@ -8,11 +8,18 @@
         min-height: 572px;
         display: flex;
         align-items: center;
+
+        &::before {
+            content: url('../img/decor-promo.svg');
+            position: absolute;
+            top: 33px;
+            left: 50%;
+            transform: translateX(112px);
+        }
     }
 
     &__info {
         position: relative;
-        z-index: 2;
         max-width: 664px;
         display: flex;
         flex-direction: column;
@@ -24,7 +31,6 @@
         position: absolute;
         top: 58px;
         left: 50%;
-        z-index: 1;
         transform: translateX(155px);
     }
 }
