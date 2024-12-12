@@ -26,12 +26,12 @@
     }
 
     &__body {
-        margin-top: -33px;
+
         padding: 0 var(--container-padding);
     }
 
     &__image {
         transform: translateX(10px);
-        margin: 0 auto;
+        margin: -33px auto 0;
     }
 }
