@@ -30,6 +30,13 @@
         font-weight: 800;
         font-size: 9px;
         color: #fff;
+
+        &:hover {
+
+            .header__gift-count {
+                background: #4054f9;
+            }
+        }
     }
 
     &__gift-image {}
@@ -50,6 +57,7 @@
         font-size: 9px;
         color: #fff;
         background: #725ed8;
+        transition: all .2s;
     }
 
     &__registration {
@@ -65,5 +73,9 @@
         font-weight: 600;
         font-size: 12px;
         color: #4054f9;
+
+        &:hover {
+            color: #725ed8;
+        }
     }
 }
