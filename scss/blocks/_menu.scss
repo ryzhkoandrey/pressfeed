@@ -3,15 +3,13 @@
     &__list {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 22px;
     }
 
     &__item {
+        position: relative;
 
         &--has-dropdown {
-            position: relative;
-            padding-right: 18px;
-            cursor: pointer;
 
             &:hover {
 
@@ -23,23 +21,34 @@
                 }
             }
 
-            &::after {
-                content: url('../img/arrow-down.svg');
-                position: absolute;
-                top: 2px;
-                right: 0;
-                width: 16px;
-                height: 16px;
+            .menu__link {
+                position: relative;
+                padding-right: 18px;
+
+                &::after {
+                    content: url('../img/arrow-down.svg');
+                    position: absolute;
+                    top: 6px;
+                    right: 0;
+                    width: 16px;
+                    height: 16px;
+                }
             }
         }
     }
 
     &__link {
+        padding: 4px;
         font-family: "Segoe UI", sans-serif;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
         color: #262626;
+        cursor: pointer;
+
+        &:hover {
+            color: #4054f9;
+        }
 
         &--accent {
             color: #d1852c;
@@ -47,24 +56,35 @@
     }
 
     &__dropdown {
-        // visibility: hidden;
+        visibility: hidden;
         position: absolute;
         top: 100%;
-        left: 0;
-        // transform: translate(0, 10%);
-        padding: 12px;
+        left: -20px;
+        transform: translate(0, 10%);
+        border-radius: 3px;
+        padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 12px;
+        box-shadow: 25px 25px 50px 0 rgba(0, 0, 0, 0.07);
         background: #fff;
-        // opacity: 0;
+        opacity: 0;
         transition: all .2s;
-        // pointer-events: none;
+        pointer-events: none;
 
     }
 
     &__dropdown-item {}
 
-    &__dropdown-link {}
+    &__dropdown-link {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #262626;
+
+        &:hover {
+            color: #4054f9;
+        }
+    }
 
 }
