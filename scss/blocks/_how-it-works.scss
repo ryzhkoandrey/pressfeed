@@ -1,4 +1,5 @@
 .how-it-works {
+    padding: 140px 0;
 
     &__header {
         margin: 0 auto;
@@ -7,6 +8,10 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+
+    &__title {
+        text-align: center;
     }
 
     &__description {

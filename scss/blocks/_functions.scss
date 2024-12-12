@@ -1,8 +1,18 @@
 .functions {
+    padding-bottom: 140px;
+    background: #f2f5fb;
 
-    &__title {}
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
 
-    &__cards {}
+    &__cards {
+        border-radius: 3px;
+        padding: 50px 70px;
+        box-shadow: 25px 25px 50px 0 rgba(0, 0, 0, 0.07);
+        background: #fff;
+    }
 
     &__card {
 
