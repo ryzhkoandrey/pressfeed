@@ -3,4 +3,13 @@
     // fonts
 
     --font-primary: "Montserrat", sans-serif;
+
+    // container
+
+    --container-width: 1170px;
+    --container-padding: 55px;
+
+    @include mobile {
+        --container-padding: 16px;
+    }
 }
