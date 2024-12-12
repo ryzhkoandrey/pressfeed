@@ -1,4 +1,12 @@
 .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 1.18519;
+    letter-spacing: 0.01em;
+    color: #262626;
 
-    &__accent {}
+    &__accent {
+        color: #4054f9;
+    }
 }
