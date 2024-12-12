@@ -25,11 +25,7 @@
 
     &__gift {
         position: relative;
-        margin-right: 13px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 800;
-        font-size: 9px;
-        color: #fff;
+        padding: 7px 12px 5px 5px;
 
         &:hover {
 
@@ -43,8 +39,8 @@
 
     &__gift-count {
         position: absolute;
-        top: -5px;
-        right: -11px;
+        top: 2px;
+        right: 1px;
         border-radius: 100%;
         border: 2px solid #fff;
         min-width: 18px;
