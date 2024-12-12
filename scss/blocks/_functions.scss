@@ -23,7 +23,6 @@
     // card
 
     &__card {
-        max-width: calc(430px + 75px);
 
         &--left {
             padding-right: 74px;
@@ -83,28 +82,87 @@
 
     &__prices {}
 
-    &__prices-title {}
-
-    &__prices-row {}
-
-    &__prices-col {
-
-        &--border {}
+    &__prices-title {
+        margin-bottom: 44px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.36364;
+        text-align: center;
+        color: #262626;
     }
 
-    &__prices-text {}
+    &__prices-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
+    &__prices-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+
+        &--left {
+            padding-right: 54px;
+            border-right: 1px solid #cfd7e7;
+        }
+
+        &--right {
+            padding-left: 55px;
+        }
+    }
+
+    &__prices-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #3b3b3b;
+    }
 
     // price
 
     &__price {}
 
-    &__price-title {}
+    &__price-title {
+        margin-bottom: 6px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #3b3b3b;
+    }
 
-    &__price-count {}
+    &__price-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
 
-    &__price-sign {}
+    &__price-old {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.36364;
+        text-align: center;
+        color: #3b3b3b;
+    }
 
-    &__price-old {}
+    &__price-del {
+        text-decoration: line-through;
+    }
 
-    &__price-new {}
+    &__price-new {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.36364;
+        text-align: center;
+        color: #4054f9;
+    }
 }
