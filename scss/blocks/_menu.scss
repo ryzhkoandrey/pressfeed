@@ -13,9 +13,17 @@
 
             &:hover {
 
+                .menu__link {
+                    color: #4054f9;
+
+                    &::after {
+                        transform: translate(0, 3px) rotate(-180deg);
+                    }
+                }
+
                 .menu__dropdown {
                     visibility: visible;
-                    transform: translate(0, 0);
+                    transform: translate(0);
                     opacity: 1;
                     pointer-events: all;
                 }
@@ -32,6 +40,7 @@
                     right: 0;
                     width: 16px;
                     height: 16px;
+                    transition: all .2s;
                 }
             }
         }
@@ -63,6 +72,7 @@
         transform: translate(0, 10%);
         border-radius: 3px;
         padding: 24px;
+        width: 220px;
         display: flex;
         flex-direction: column;
         gap: 12px;
