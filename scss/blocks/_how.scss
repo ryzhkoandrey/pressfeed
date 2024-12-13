@@ -1,4 +1,4 @@
-.how-it-works {
+.how {
     padding: 140px 0;
 
     @include tablet {
@@ -80,6 +80,12 @@
             transform: translateX(4px);
             margin: -2px auto -18px;
             width: 86%;
+        }
+
+        @include mobile {
+            transform: translateX(2px);
+            margin: -4px auto -18px;
+            width: 95%;
         }
     }
 }
