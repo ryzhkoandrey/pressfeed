@@ -1,1 +1,105 @@
-.footer {}
+.footer {
+    background: #f2f5fb;
+
+    // top
+
+    &__top {
+        padding: 40px 0;
+        border: 1px solid #cfd7e7;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #262626;
+    }
+
+    &__top-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__link-icon {}
+
+    &__link-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.72;
+        color: #3b3b3b;
+    }
+
+    &__btn {
+        border-radius: 4px;
+        padding: 7px 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        &--whatsapp {
+            background: #56cd6c;
+        }
+
+        &--telegram {
+            background: #61a8de;
+        }
+    }
+
+    &__btn-icon {}
+
+    &__btn-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.57143;
+        text-align: right;
+        color: #fff;
+    }
+
+
+    // bottom
+
+    &__bottom {
+        padding: 32px 0;
+    }
+
+    &__bottom-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__socials-item {}
+
+    &__socials-link {}
+
+    &__socials-icon {}
+
+    &__platforms {}
+
+    &__platforms-link {}
+
+    &__platforms-image {}
+}
