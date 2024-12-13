@@ -72,19 +72,19 @@
 
         @include laptop {
             transform: translateX(7px);
-            margin: -18px auto -18px;
+            margin: -18px auto -12px;
             width: 93%;
         }
 
         @include tablet {
             transform: translateX(4px);
-            margin: -2px auto -18px;
+            margin: -2px auto -22px;
             width: 86%;
         }
 
         @include mobile {
             transform: translateX(2px);
-            margin: -4px auto -18px;
+            margin: -4px auto -4px;
             width: 95%;
         }
     }
