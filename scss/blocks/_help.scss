@@ -7,12 +7,20 @@
         padding: 100px 0;
     }
 
+    @include mobile {
+        padding: 50px 0;
+    }
+
     &__title {
         margin-bottom: 50px;
         max-width: 800px;
 
         @include tablet {
             margin-bottom: 30px;
+        }
+
+        @include mobile {
+            margin-bottom: 20px;
         }
     }
 
@@ -56,6 +64,10 @@
             padding: 41px 33px;
         }
 
+        @include mobile {
+            padding: 24px 18px;
+        }
+
         &--wide {
             grid-column: span 3;
 
@@ -80,6 +92,11 @@
 
         @include tablet {
             max-width: none;
+        }
+
+        @include mobile {
+            font-size: 16px;
+            line-height: 1.5;
         }
 
         &--wide {
