@@ -10,11 +10,9 @@
         align-items: center;
 
         @include laptop {
-            padding: 80px 0;
+            padding: 80px 0 482px;
             min-height: auto;
-            flex-direction: column;
             justify-content: center;
-            gap: 64px;
         }
 
         &::before {
@@ -39,12 +37,7 @@
         gap: 50px;
 
         @include laptop {
-            order: -1;
             align-items: center;
-        }
-
-        @include tablet {
-            gap: 30px;
         }
     }
 
@@ -63,8 +56,9 @@
         object-fit: contain;
 
         @include laptop {
-            position: static;
-            transform: translateX(34px);
+            top: auto;
+            bottom: 80px;
+            transform: translateX(-250px);
             width: auto;
             height: 338px;
         }
