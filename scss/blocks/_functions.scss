@@ -1,6 +1,19 @@
 .functions {
+    overflow: hidden;
+    position: relative;
     padding-bottom: 140px;
     background: #f2f5fb;
+
+    &::before {
+        content: url('../img/functions-decor.svg');
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-700px);
+        z-index: 1;
+        width: 226px;
+        height: 188px;
+    }
 
     &__title {
         margin-bottom: 50px;
@@ -8,21 +21,24 @@
     }
 
     &__body {
+        position: relative;
+        z-index: 2;
         border-radius: 3px;
-        padding: 50px 90px 50px 70px;
+        padding: 50px 70px;
         box-shadow: 25px 25px 50px 0 rgba(0, 0, 0, 0.07);
         background: #fff;
     }
 
     &__cards {
-        margin-bottom: 44px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 48px;
+        padding-right: 20px;
+        display: flex;
     }
 
     // card
 
     &__card {
+        width: 100%;
 
         &--left {
             padding-right: 74px;
@@ -84,6 +100,7 @@
 
     &__prices-title {
         margin-bottom: 44px;
+        padding-right: 20px;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 22px;
@@ -93,30 +110,33 @@
     }
 
     &__prices-row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: stretch;
+        display: flex;
     }
 
     &__prices-column {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
+        width: 100%;
 
         &--left {
-            padding-right: 54px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-right: 1px solid #cfd7e7;
         }
 
         &--right {
-            padding-left: 55px;
+            padding-left: 57px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+
         }
     }
 
     &__prices-text {
+        padding-right: 58px;
         font-family: "Montserrat", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
@@ -139,6 +159,7 @@
 
     &__price-count {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 8px;
@@ -153,9 +174,7 @@
         color: #3b3b3b;
     }
 
-    &__price-del {
-        text-decoration: line-through;
-    }
+    &__price-del {}
 
     &__price-new {
         font-family: "Montserrat", sans-serif;
