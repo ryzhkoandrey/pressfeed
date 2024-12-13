@@ -10,6 +10,17 @@
     color: #fff;
     background: #4054f9;
 
+    @include mobile {
+        padding: 12px 48px;
+        min-width: auto;
+        font-size: 16px;
+        line-height: 1.625;
+    }
+
+    @include mobile-small {
+        width: 100%;
+    }
+
     &:hover {
         background: #725ed8;
     }
