@@ -6,13 +6,36 @@
         max-width: 626px;
     }
 
-    &__items {}
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 57px;
+        row-gap: 50px;
+    }
 
     &__item {}
 
-    &__item-counter {}
+    &__item-counter {
+        border-bottom: 1px solid #cfd7e7;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 1.17391;
+        color: #4054f9;
+    }
 
-    &__item-description {}
+    &__item-description {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.36364;
+        color: #3b3b3b;
+    }
 
-    &__item-strong {}
+    &__item-strong {
+        font-weight: 700;
+        color: #262626;
+    }
 }
