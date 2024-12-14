@@ -26,6 +26,10 @@
         @include tablet {
             margin-bottom: 30px;
         }
+
+        @include mobile {
+            margin-bottom: 18px;
+        }
     }
 
     &__body {
@@ -42,6 +46,10 @@
 
         @include tablet {
             padding: 50px 72px;
+        }
+
+        @include mobile {
+            padding: 30px 18px;
         }
     }
 
@@ -106,8 +114,18 @@
         text-align: center;
         color: #262626;
 
+        @include mobile {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
         &--big-margin {
             margin-bottom: 32px;
+
+            @include mobile {
+                margin-bottom: 16px;
+            }
         }
     }
 
@@ -118,6 +136,12 @@
         font-size: 16px;
         line-height: 1.5;
         color: #979797;
+
+        @include mobile {
+            margin-bottom: 13px;
+            font-size: 14px;
+            line-height: 1.42857;
+        }
     }
 
     &__card-list {
@@ -127,6 +151,10 @@
 
         @include tablet {
             margin-bottom: 30px;
+        }
+
+        @include mobile {
+            margin-bottom: 20px;
         }
     }
 
@@ -138,6 +166,11 @@
         line-height: 1.5;
         color: #3b3b3b;
         background: url('../img/check.svg') no-repeat left top;
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 1.42857;
+        }
     }
 
     &__card-strong {
@@ -174,6 +207,12 @@
 
         @include tablet {
             margin-bottom: 20px;
+        }
+
+        @include mobile {
+            margin-bottom: 6px;
+            font-size: 16px;
+            line-height: 1.5;
         }
     }
 
@@ -240,6 +279,11 @@
 
         @include laptop {
             padding-right: 0;
+        }
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 1.42857;
         }
     }
 
