@@ -18,6 +18,10 @@
     &__title {
         margin-bottom: 50px;
         text-align: center;
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__body {
@@ -31,6 +35,10 @@
         @include laptop {
             padding: 50px 33px;
         }
+
+        @include tablet {
+            padding: 50px 72px;
+        }
     }
 
     &__cards {
@@ -41,6 +49,11 @@
         @include laptop {
             margin-bottom: 40px;
             padding-right: 0;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -56,6 +69,13 @@
             @include laptop {
                 padding-right: 45px;
             }
+
+            @include tablet {
+                border: 0;
+                border-bottom: 1px solid #cfd7e7;
+                padding-right: 0;
+                padding-bottom: 30px;
+            }
         }
 
         &--right {
@@ -63,6 +83,10 @@
 
             @include laptop {
                 padding-left: 46px;
+            }
+
+            @include tablet {
+                padding-left: 0;
             }
         }
     }
@@ -135,6 +159,11 @@
 
         @include laptop {
             align-items: flex-start;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
