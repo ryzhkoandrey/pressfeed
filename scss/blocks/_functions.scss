@@ -4,6 +4,10 @@
     padding-bottom: 140px;
     background: #f2f5fb;
 
+    @include tablet {
+        padding-bottom: 100px;
+    }
+
     &::before {
         content: url('../img/functions-decor.svg');
         position: absolute;
@@ -141,19 +145,18 @@
         color: #262626;
     }
 
-    // visible only on mobile
-
-    &__visible-only-on-mobile {
-        display: none;
-
-        @include tablet {
-            display: block;
-        }
-    }
-
     // prices
 
-    &__prices {}
+    &__prices {
+
+        &--hide {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
 
     &__prices-title {
         margin-bottom: 44px;
@@ -201,6 +204,10 @@
                 padding: 18px 45px 18px 0;
             }
 
+            @include tablet {
+                display: none;
+            }
+
         }
 
         &--right {
@@ -213,6 +220,10 @@
                 padding-left: 46px;
                 grid-template-columns: 1fr;
                 gap: 20px;
+            }
+
+            @include tablet {
+                padding-left: 0;
             }
 
         }
