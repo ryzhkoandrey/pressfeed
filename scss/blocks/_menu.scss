@@ -127,13 +127,6 @@
             max-height: 0;
             transition: all .4s;
         }
-
-        &--active {
-
-            @include laptop {
-                max-height: none;
-            }
-        }
     }
 
     &__submenu-list {
