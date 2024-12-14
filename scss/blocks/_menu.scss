@@ -11,6 +11,10 @@
         background: #fff;
     }
 
+    @include mobile {
+        padding: calc(var(--container-padding) * 2) var(--container-padding);
+    }
+
     &--active {
 
         @include laptop {
@@ -32,7 +36,7 @@
     &__item {
         position: relative;
 
-        &--has-dropdown {
+        &--has-submenu {
 
             &:hover {
 
@@ -47,7 +51,7 @@
                     }
                 }
 
-                .menu__dropdown {
+                .menu__submenu {
 
                     @include laptop-up {
                         visibility: visible;
@@ -100,7 +104,9 @@
         }
     }
 
-    &__dropdown {
+    // submenu
+
+    &__submenu {
 
         @include laptop-up {
             visibility: hidden;
@@ -130,16 +136,16 @@
         }
     }
 
-    &__dropdown-list {
+    &__submenu-list {
         padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 14px;
     }
 
-    &__dropdown-item {}
+    &__submenu-item {}
 
-    &__dropdown-link {
+    &__submenu-link {
         font-family: "Segoe UI", sans-serif;
         font-weight: 600;
         font-size: 15px;

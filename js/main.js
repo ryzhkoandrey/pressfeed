@@ -1,5 +1,7 @@
 // =============== MOBILE MENU ===============
 
+// Open / Close
+
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
@@ -13,3 +15,5 @@ function toggleMenu() {
     menu.classList.toggle('menu--active');
     menuToggler.classList.toggle('header__menu-toggler--active');
 };
+
+// Submenu
