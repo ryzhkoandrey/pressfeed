@@ -1,9 +1,13 @@
+// min-width
+
 @mixin laptop-up() {
 
     @media (min-width: 1279px) {
         @content;
     }
 }
+
+// max-width
 
 @mixin laptop() {
 

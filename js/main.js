@@ -1,12 +1,15 @@
 // =============== MOBILE MENU ===============
 
-const menuToggler = document.querySelector('.header__menu-toggler');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
+const menuToggler = document.querySelector('.header__menu-toggler');
 
 menuToggler.onclick = toggleMenu;
 
 function toggleMenu() {
-    menuToggler.classList.toggle('header__menu-toggler--active');
+    body.classList.toggle('no-scroll');
+    header.classList.toggle('header--active');
     menu.classList.toggle('menu--active');
-    document.body.classList.toggle('no-scroll');
+    menuToggler.classList.toggle('header__menu-toggler--active');
 };
