@@ -132,6 +132,10 @@
 
     &__prices-row {
         display: flex;
+
+        @include laptop {
+            align-items: flex-start;
+        }
     }
 
     &__prices-column {
@@ -145,7 +149,7 @@
             border-right: 1px solid #cfd7e7;
 
             @include laptop {
-                padding-right: 45px;
+                padding: 18px 45px 18px 0;
             }
 
         }
@@ -158,6 +162,8 @@
 
             @include laptop {
                 padding-left: 46px;
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
 
         }
