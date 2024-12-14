@@ -1,4 +1,4 @@
-// =============== MENU ===============
+// =============== MOBILE MENU ===============
 
 const menuToggler = document.querySelector('.header__menu-toggler');
 const menu = document.querySelector('.menu');

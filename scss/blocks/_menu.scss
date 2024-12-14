@@ -6,8 +6,9 @@
         left: 0;
         width: 100%;
         height: 100%;
+        border-top: 1px solid #cfd7e7;
         display: none;
-        background: #f2f5fb;
+        background: #fff;
     }
 
     &--active {
@@ -39,7 +40,10 @@
                     color: #4054f9;
 
                     &::after {
-                        transform: translate(0, 3px) rotate(-180deg);
+
+                        @include laptop-up {
+                            transform: translate(0, 3px) rotate(-180deg);
+                        }
                     }
                 }
 
@@ -47,7 +51,6 @@
                     visibility: visible;
                     transform: translate(0);
                     opacity: 1;
-                    pointer-events: all;
                 }
             }
 
@@ -106,8 +109,14 @@
         background: #fff;
         opacity: 0;
         transition: all .2s;
-        pointer-events: none;
 
+        @include laptop {
+            visibility: visible;
+            position: static;
+            transform: none;
+            box-shadow: none;
+            opacity: 1;
+        }
     }
 
     &__dropdown-item {}
