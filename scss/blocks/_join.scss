@@ -1,6 +1,14 @@
 .join {
     padding-bottom: 140px;
 
+    @include tablet {
+        padding-bottom: 100px;
+    }
+
+    @include mobile {
+        padding-bottom: 50px;
+    }
+
     &__inner {
         margin: 0 auto;
         max-width: 822px;
@@ -8,6 +16,14 @@
         flex-direction: column;
         align-items: center;
         gap: 50px;
+
+        @include tablet {
+            gap: 30px;
+        }
+
+        @include mobile {
+            gap: 20px;
+        }
     }
 
     &__title {
