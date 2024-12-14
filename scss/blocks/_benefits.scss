@@ -1,9 +1,17 @@
 .benefits {
     padding: 140px 0;
 
+    @include tablet {
+        padding: 100px 0;
+    }
+
     &__title {
         margin-bottom: 50px;
         max-width: 626px;
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__items {
@@ -16,6 +24,11 @@
             max-width: 760px;
             grid-template-columns: repeat(2, 1fr);
         }
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
     }
 
     &__item {
@@ -24,6 +37,10 @@
 
             @include laptop {
                 margin-top: -33px;
+            }
+
+            @include tablet {
+                margin: 0;
             }
         }
     }
