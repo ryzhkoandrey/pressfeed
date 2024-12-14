@@ -17,8 +17,12 @@
         }
     }
 
-    &__menu-toggle {
+    &__menu-toggler {
         display: none;
+
+        &--active {
+            background: yellow;
+        }
 
         @include laptop {
             margin-right: 13px;
@@ -30,7 +34,7 @@
         }
     }
 
-    &__menu-toggle-icon {}
+    &__menu-toggler-icon {}
 
     &__logo {
 

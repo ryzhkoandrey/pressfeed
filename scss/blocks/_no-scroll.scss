@@ -1,6 +1,6 @@
 .no-scroll {
 
-    @include mobile {
+    @include laptop {
         overflow: hidden;
     }
 }
