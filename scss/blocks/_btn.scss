@@ -12,9 +12,13 @@
 
     @include mobile {
         padding: 12px 48px;
-        min-width: 100%;
+        min-width: none;
         font-size: 16px;
         line-height: 1.625;
+    }
+
+    @include mobile-small {
+        width: 100%;
     }
 
     &:hover {
