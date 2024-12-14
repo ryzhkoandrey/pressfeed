@@ -84,6 +84,10 @@
         cursor: pointer;
 
         @include laptop {
+            font-size: 20px;
+        }
+
+        @include mobile {
             font-size: 18px;
         }
 
@@ -143,6 +147,10 @@
 
         @include laptop {
             font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
         }
 
         &:hover {
