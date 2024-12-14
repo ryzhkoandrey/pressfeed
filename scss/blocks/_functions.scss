@@ -52,6 +52,7 @@
         }
 
         @include tablet {
+            margin-bottom: 0;
             flex-direction: column;
             align-items: center;
         }
@@ -73,6 +74,7 @@
             @include tablet {
                 border: 0;
                 border-bottom: 1px solid #cfd7e7;
+                margin-bottom: 30px;
                 padding-right: 0;
                 padding-bottom: 30px;
             }
@@ -118,6 +120,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__card-item {
@@ -133,6 +139,16 @@
     &__card-strong {
         font-weight: 700;
         color: #262626;
+    }
+
+    // visible only on mobile
+
+    &__visible-only-on-mobile {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
     }
 
     // prices
@@ -151,6 +167,10 @@
 
         @include laptop {
             padding-right: 0;
+        }
+
+        @include tablet {
+            margin-bottom: 20px;
         }
     }
 
