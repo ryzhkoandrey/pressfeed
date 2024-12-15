@@ -32,15 +32,10 @@
     }
 
     &__menu-toggler {
+        position: relative;
+        width: 24px;
+        height: 24px;
         display: none;
-
-        &:hover {
-            opacity: 0.7;
-        }
-
-        &--active {
-            background: yellow;
-        }
 
         @include laptop {
             margin-right: 13px;
@@ -50,9 +45,35 @@
         @include mobile {
             margin-right: 8px;
         }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &--active {
+
+            .header__menu-toggler-icon--open {
+                transform: scale(0);
+            }
+
+            .header__menu-toggler-icon--close {
+                transform: scale(1);
+            }
+        }
     }
 
-    &__menu-toggler-icon {}
+    &__menu-toggler-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .2s;
+
+        &--open {}
+
+        &--close {
+            transform: scale(0);
+        }
+    }
 
     &__logo {
 
