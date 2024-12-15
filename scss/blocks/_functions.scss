@@ -111,7 +111,7 @@
 
     &__card-title {
         margin-bottom: 22px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         font-size: 26px;
         line-height: 1.30769;
@@ -135,7 +135,7 @@
 
     &__card-description {
         margin-bottom: 20px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -164,7 +164,7 @@
 
     &__card-item {
         padding-left: 30px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -198,7 +198,7 @@
     &__prices-title {
         margin-bottom: 44px;
         padding-right: 20px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 600;
         font-size: 22px;
         line-height: 1.36364;
@@ -278,7 +278,7 @@
 
     &__prices-text {
         padding-right: 58px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -301,7 +301,7 @@
 
     &__price-title {
         margin-bottom: 6px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -323,7 +323,7 @@
     }
 
     &__price-old {
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 22px;
         line-height: 1.36364;
@@ -334,7 +334,7 @@
     &__price-del {}
 
     &__price-new {
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         font-size: 22px;
         line-height: 1.36364;

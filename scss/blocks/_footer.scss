@@ -10,7 +10,7 @@
 
     &__title {
         margin-bottom: 25px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         font-size: 16px;
         text-align: center;
@@ -51,7 +51,7 @@
     &__link-icon {}
 
     &__link-text {
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.72;
@@ -94,7 +94,7 @@
     &__btn-icon {}
 
     &__btn-text {
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-primary);
         font-weight: 500;
         font-size: 14px;
         line-height: 1.57143;

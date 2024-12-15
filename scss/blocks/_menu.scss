@@ -59,34 +59,23 @@
 
                     @include laptop-up {
                         visibility: visible;
-                        transform: translate(0);
                         opacity: 1;
+                        transform: translate(0);
                     }
                 }
             }
 
             .menu__link {
-                position: relative;
-                padding-right: 18px;
+                display: flex;
+                gap: 2px;
 
                 &::after {
                     content: url('../img/arrow-down.svg');
-                    position: absolute;
-                    top: 9px;
-                    right: 0;
                     width: 16px;
-                    height: 12px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     transition: all .2s;
 
-                    @include laptop {
-                        top: 12px;
-                    }
-
-                    @include mobile {
-                        top: 11px;
+                    @include laptop-up {
+                        transform: translateY(1px);
                     }
                 }
 
@@ -112,7 +101,7 @@
 
     &__link {
         padding: 4px;
-        font-family: "Segoe UI", sans-serif;
+        font-family: var(--font-secondary);
         font-weight: 600;
         font-size: 15px;
         text-align: center;
@@ -170,7 +159,7 @@
     &__submenu-item {}
 
     &__submenu-link {
-        font-family: "Segoe UI", sans-serif;
+        font-family: var(--font-secondary);
         font-weight: 600;
         font-size: 15px;
         color: #262626;
