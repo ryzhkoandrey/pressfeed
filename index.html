@@ -130,7 +130,17 @@
                 <p class="how__description">В рамках работы с&nbsp;профессиональным аккаунтом Pressfeed вы можете выбрать помощь <strong class="how__description-accent">менеджера по сопровождению,</strong> или <strong class="how__description-accent">куратора</strong></p>
             </div>
 
-            <img class="how__image" src="img/how.png" srcset="img/how@2x.png 2x" width="1234" height="512" alt="Как это работает?">
+            <!-- <img class="how__image" src="img/how.png" srcset="img/how@2x.png 2x" width="1234" height="512" alt="Как это работает?"> -->
+
+            <picture>
+                <source srcset="img/how-mobile@2x.png" media="(max-width: 598px)" type="image/png">
+                <source srcset="img/how-mobile.png" media="(max-width: 598px)" type="image/png">
+
+                <source srcset="img/how@2x.png" media="(min-width: 599px)" type="image/png">
+                <source srcset="img/how.png" media="(min-width: 599px)" type="image/png">
+
+                <img class="how__image" src="img/how.png" width="1234" height="512" alt="Как это работает?">
+            </picture>
 
         </section>
 
