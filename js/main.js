@@ -19,17 +19,20 @@ function toggleMenu() {
 // Submenu
 
 const submenuLinks = document.querySelectorAll('.menu__item--has-submenu > .menu__link');
+const isMobile = () => window.matchMedia('(max-width: 1279px)').matches;
 
 submenuLinks.forEach(function (link) {
     link.addEventListener('click', function () {
 
-        const submenu = link.nextElementSibling;
-        const isOpen = link.classList.toggle('menu__link--active');
+        if (isMobile()) {
+            const submenu = link.nextElementSibling;
+            const isOpen = link.classList.toggle('menu__link--active');
 
-        if (isOpen) {
-            submenu.style.maxHeight = submenu.scrollHeight + 'px';
-        } else {
-            submenu.removeAttribute('style');
+            if (isOpen) {
+                submenu.style.maxHeight = submenu.scrollHeight + 'px';
+            } else {
+                submenu.removeAttribute('style');
+            }
         }
     });
 });
