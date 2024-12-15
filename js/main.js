@@ -1,6 +1,6 @@
 // =============== MOBILE MENU ===============
 
-// Open / Close
+// Menu toggle
 
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
