@@ -8,7 +8,7 @@
     line-height: 1.5;
     text-align: center;
     color: #fff;
-    background: #4054f9;
+    background: var(--color-primary);
 
     @include mobile {
         padding: 12px 48px;
@@ -22,6 +22,6 @@
     }
 
     &:hover {
-        background: #725ed8;
+        background: var(--color-secondary);
     }
 }

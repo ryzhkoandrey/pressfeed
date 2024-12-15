@@ -14,7 +14,7 @@
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        color: #262626;
+        color: var(--color-text-1);
     }
 
     &__top-row {
@@ -43,7 +43,7 @@
         &:hover {
 
             .footer__link-text {
-                color: #4054f9;
+                color: var(--color-primary);
             }
         }
     }
@@ -55,7 +55,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.72;
-        color: #3b3b3b;
+        color: var(--color-text-2);
     }
 
     &__btn {
@@ -136,7 +136,7 @@
         background: #b9c2d3;
 
         &:hover {
-            background: #4054f9;
+            background: var(--color-primary);
         }
     }
 

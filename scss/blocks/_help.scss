@@ -88,7 +88,7 @@
         font-weight: 600;
         font-size: 26px;
         line-height: 1.30769;
-        color: #262626;
+        color: var(--color-text-1);
 
         @include tablet {
             max-width: none;

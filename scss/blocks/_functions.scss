@@ -116,7 +116,7 @@
         font-size: 26px;
         line-height: 1.30769;
         text-align: center;
-        color: #262626;
+        color: var(--color-text-1);
 
         @include mobile {
             margin-bottom: 12px;
@@ -139,7 +139,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        color: #979797;
+        color: var(--color-text-3);
 
         @include mobile {
             margin-bottom: 13px;
@@ -168,7 +168,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        color: #3b3b3b;
+        color: var(--color-text-2);
         background: url('../img/check.svg') no-repeat left top;
 
         @include mobile {
@@ -179,7 +179,7 @@
 
     &__card-strong {
         font-weight: 700;
-        color: #262626;
+        color: var(--color-text-1);
     }
 
     // prices
@@ -203,7 +203,7 @@
         font-size: 22px;
         line-height: 1.36364;
         text-align: center;
-        color: #262626;
+        color: var(--color-text-1);
 
         @include laptop {
             padding-right: 0;
@@ -283,7 +283,7 @@
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
-        color: #3b3b3b;
+        color: var(--color-text-2);
 
         @include laptop {
             padding-right: 0;
@@ -306,7 +306,7 @@
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
-        color: #3b3b3b;
+        color: var(--color-text-2);
 
         @include mobile {
             font-size: 14px;
@@ -328,7 +328,7 @@
         font-size: 22px;
         line-height: 1.36364;
         text-align: center;
-        color: #3b3b3b;
+        color: var(--color-text-2);
     }
 
     &__price-del {}
@@ -339,6 +339,6 @@
         font-size: 22px;
         line-height: 1.36364;
         text-align: center;
-        color: #4054f9;
+        color: var(--color-primary);
     }
 }

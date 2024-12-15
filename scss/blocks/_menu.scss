@@ -45,7 +45,7 @@
             &:hover {
 
                 .menu__link {
-                    color: #4054f9;
+                    color: var(--color-primary);
 
                     &::after {
 
@@ -105,7 +105,7 @@
         font-weight: 600;
         font-size: 15px;
         text-align: center;
-        color: #262626;
+        color: var(--color-text-1);
         cursor: pointer;
 
         @include laptop {
@@ -117,11 +117,11 @@
         }
 
         &:hover {
-            color: #4054f9;
+            color: var(--color-primary);
         }
 
         &--accent {
-            color: #d1852c;
+            color: var(--color-accent);
         }
     }
 
@@ -162,7 +162,7 @@
         font-family: var(--font-secondary);
         font-weight: 600;
         font-size: 15px;
-        color: #262626;
+        color: var(--color-text-1);
 
         @include laptop {
             font-size: 18px;
@@ -173,7 +173,7 @@
         }
 
         &:hover {
-            color: #4054f9;
+            color: var(--color-primary);
         }
     }
 
