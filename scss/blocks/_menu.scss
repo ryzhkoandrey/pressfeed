@@ -5,7 +5,7 @@
         top: 75px;
         left: 0;
         border-top: 1px solid #cfd7e7;
-        padding: var(--container-padding) var(--container-padding) calc(var(--container-padding) * 2);
+        padding: var(--container-padding);
         width: 100%;
         display: none;
         background: #fff;
@@ -46,7 +46,7 @@
                     &::after {
 
                         @include laptop-up {
-                            transform: translate(0, 3px) rotate(-180deg);
+                            transform: rotate(-180deg);
                         }
                     }
                 }
@@ -68,11 +68,39 @@
                 &::after {
                     content: url('../img/arrow-down.svg');
                     position: absolute;
-                    top: 6px;
+                    top: 9px;
                     right: 0;
                     width: 16px;
-                    height: 16px;
+                    height: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     transition: all .2s;
+
+                    @include laptop {
+                        top: 12px;
+                    }
+
+                    @include mobile {
+                        top: 11px;
+                    }
+                }
+
+                &--active {
+
+                    @include laptop {
+
+                        &::after {
+                            transform: translateY(4px) rotate(-180deg);
+                        }
+                    }
+
+                    @include mobile {
+
+                        &::after {
+                            transform: translateY(2px) rotate(-180deg);
+                        }
+                    }
                 }
             }
         }
